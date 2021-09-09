@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginnav_graph"
+    app:startDestination="@id/login2">
+    <fragment
+        android:id="@+id/signup2"
+        android:name="com.example.khushi_baby.Fragments.signup"
+        android:label="signup" >
+        <action
+            android:id="@+id/action_signup2_to_login2"
+            app:destination="@id/login2" />
+    </fragment>
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.khushi_baby.Fragments.login"
+        android:label="login" >
+        <action
+            android:id="@+id/action_login2_to_signup2"
+            app:destination="@id/signup2" />
+    </fragment>
+</navigation>
